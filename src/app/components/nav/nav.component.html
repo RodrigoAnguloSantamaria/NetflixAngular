@@ -1,0 +1,11 @@
+<nav class="c-nav">
+    <section>
+        <img *ngIf="visible" src="../../../assets/Icons/ico_sun.png" alt="Tema" class="c-nav__ico" (click)="changeTheme()">
+        <img *ngIf="!visible" src="../../../assets/Icons/ico_moon.png" alt="Tema" class="c-nav__ico" (click)="changeTheme()">
+    </section>
+    <ul class="c-nav__ul">
+        
+        <li>INICIO</li>
+        <li>BUSCAR</li>
+    </ul>
+</nav>

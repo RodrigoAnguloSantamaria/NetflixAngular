@@ -1,0 +1,8 @@
+<div class="c-films">
+    <h4>{{films.section}}</h4>
+    <ul class="c-films__ul">
+        <ng-container *ngFor="let film of films.films">
+            <app-film-item [film]="film"></app-film-item>
+        </ng-container>
+    </ul>
+</div>

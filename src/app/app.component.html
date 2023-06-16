@@ -1,0 +1,13 @@
+<div [ngClass]="{isLight: visible, isDark:!visible}">
+ 
+  
+<app-nav (enviar)="recibirBoolean(visible)" [visible]="visible"></app-nav>
+<app-banner [favourites]="favoritos" [visible]="visible"></app-banner>
+<app-films [films]="comedyFilms"></app-films>
+<app-films [films]="actionFilms"></app-films>
+<app-films [films]="animeFilms"></app-films>
+<app-films [films]="dramaFilms"></app-films>
+<app-films [films]="ficcionFilms"></app-films>
+<app-films [films]="terrorFilms"></app-films>
+
+</div>
